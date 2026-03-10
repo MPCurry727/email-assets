@@ -21,8 +21,8 @@ $SignatureMap = @{
     "Sub K"        = "Subaru-Kingston.html"
     "MBDB"         = "Mercedes-Benz-Danbury.html"
     "MBOFWF"       = "Mercedes-Benz-Wappingers-Falls.html"
-    # "Acura Techs"  = "Acura-Techs.html"
-    # "Acura NoNum"  = "Acura-No Number.html"
+    "Acura- Techss"  = "Acura- Techs.html"
+    "Acura- No Number"  = "Acura- NoNumber.html"
 }
 
 foreach ($rule in $SignatureMap.Keys) {
