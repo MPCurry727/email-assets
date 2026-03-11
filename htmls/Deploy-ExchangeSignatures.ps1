@@ -19,8 +19,8 @@ $SignatureMap = @{
     "Subaru"       = "Subaru.html"
     "Toyota"       = "Toyota.html"
     "Sub K"        = "Subaru-Kingston.html"
-    "MBDB"         = "Mercedes-Benz-Danbury.html"
-    "MBOFWF"       = "Mercedes-Benz-Wappingers-Falls.html"
+    "MBDB"         = "MBDB.html"
+    "MBWF"       = "MBWF.html"
     "Acura- Techs"  = "Acura- Techs.html"
     "Acura- No Number"  = "Acura- NoNumber.html"
     "Grenadier- NoNumber" = "Grenadier - NoNumber.html"
@@ -29,6 +29,12 @@ $SignatureMap = @{
     "HondaMA- No Number" = "HondaMA- No Number.html"
     "HondaNY - No Number" = "HondaNY - No Number.html"
     "HondaNY- Techs" = "HondaNY- Techs.html"
+    "Nissan- NoNumber" = "Nissan- NoNumber.html"
+    "Nissan- Techs" = "Nissan- Techs.html"
+    "MBDB- Techs" = "MBDB- Techs.html"
+    "MBDB- NoNumber" = "MBDB- NoNumber.html"
+    "MBWF- No Number" = "MBWF- No Number.html"
+    "MBWF- Techs" = "MBWF- Techs.html"
 
 }
 
