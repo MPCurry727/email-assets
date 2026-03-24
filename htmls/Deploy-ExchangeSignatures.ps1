@@ -35,6 +35,8 @@ $SignatureMap = @{
     "MBDB- NoNumber" = "MBDB- NoNumber.html"
     "MBWF- No Number" = "MBWF- No Number.html"
     "MBWF- Techs" = "MBWF- Techs.html"
+	"Sub K - No Number" = "Subaru-Kingston - No Number.html"
+	"Sub K - Techs" = "Subaru-Kingston - Techs.html"
 
 }
 
