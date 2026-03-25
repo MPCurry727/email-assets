@@ -15,12 +15,11 @@ $SignatureMap = @{
     "HondaNY"      = "HondaNY.html"
     "HondaMA"      = "HondaMA.html"
     "Hyundai"      = "Hyundai.html"
-	#"Hyundai - Techs" = "Hyundai - Techs.html"
     "Nissan"       = "Nissan.html"
     "Subaru"       = "Subaru.html"
-	#"Subaru - Techs" = "Subaru - Techs.html"
     "Toyota"       = "Toyota.html"
-	#"Toyota - Techs" = "Toyota - Techs.html"
+	"Hyundai-Subaru" = "Hyundai-Subaru.html"
+    "Hyundai-Subaru-Toyota" = "Hyundai-Subaru-Toyota.html"
     "Sub K"        = "Subaru-Kingston.html"
     "MBDB"         = "MBDB.html"
     "MBWF"       = "MBWF.html"
@@ -39,7 +38,9 @@ $SignatureMap = @{
     #"MBWF- Techs" = "MBWF- Techs.html"
 	#"Sub K - No Number" = "Subaru-Kingston - No Number.html"
 	#"Sub K - Techs" = "Subaru-Kingston - Techs.html"
-
+    #"Toyota - Techs" = "Toyota - Techs.html"
+    #"Subaru - Techs" = "Subaru - Techs.html"
+    #"Hyundai - Techs" = "Hyundai - Techs.html"
 }
 
 foreach ($rule in $SignatureMap.Keys) {
