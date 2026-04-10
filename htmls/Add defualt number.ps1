@@ -35,6 +35,10 @@
         SearchBase = "OU=Subaru Kingston Users,OU=Subaru Kingston,DC=curryauto,DC=com"
         Phone = "(845) 339-3333"
     },
+	@{
+        SearchBase = "OU=HyuSub Users,OU=HyuSub,DC=curryauto,DC=com"
+        Phone = "(914) 930-3700"
+    },
     @{
         SearchBase = "OU=Grenadier Users,OU=Grenadier,DC=curryauto,DC=com"
         Phone = "(203) 448-1100"
