@@ -50,3 +50,4 @@ foreach ($OU in $OUs) {
     Where-Object { -not $_.telephoneNumber } |
     Set-ADUser -Replace @{telephoneNumber=$OU.Phone}
 }
+Pause
