@@ -23,6 +23,7 @@ $SignatureMap = @{
     "Sub K"        = "Subaru-Kingston.html"
     "MBDB"         = "MBDB.html"
     "MBWF"       = "MBWF.html"
+	"TOYHYSUBHA_PlatformManager" = "TOYHYSUBHA_PlatformManager.html"
     #"Acura- Techs"  = "Acura- Techs.html"
     #"Acura- No Number"  = "Acura- NoNumber.html"
     #"Grenadier- NoNumber" = "Grenadier - NoNumber.html"
@@ -67,3 +68,4 @@ foreach ($rule in $SignatureMap.Keys) {
 }
 
 Disconnect-ExchangeOnline
+Pause
