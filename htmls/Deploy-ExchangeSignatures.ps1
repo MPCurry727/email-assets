@@ -24,24 +24,8 @@ $SignatureMap = @{
     "MBDB"         = "MBDB.html"
     "MBWF"       = "MBWF.html"
 	"TOYHYSUBHA_PlatformManager" = "TOYHYSUBHA_PlatformManager.html"
-    #"Acura- Techs"  = "Acura- Techs.html"
-    #"Acura- No Number"  = "Acura- NoNumber.html"
-    #"Grenadier- NoNumber" = "Grenadier - NoNumber.html"
-    #"Grenadier- Techs" = "Grenadier - Techs.html"
-    #"HondaMA- Techs" = "HondaMA- Techs.html"
-    #"HondaMA- No Number" = "HondaMA- No Number.html"
-    #"HondaNY - No Number" = "HondaNY - No Number.html"
-    #"HondaNY- Techs" = "HondaNY- Techs.html"
-    #"Nissan- NoNumber" = "Nissan- NoNumber.html"
-    #"Nissan- Techs" = "Nissan- Techs.html"
-    #"MBDB- Techs" = "MBDB- Techs.html"
-    #"MBWF- No Number" = "MBWF- No Number.html"
-    #"MBWF- Techs" = "MBWF- Techs.html"
-	#"Sub K - No Number" = "Subaru-Kingston - No Number.html"
-	#"Sub K - Techs" = "Subaru-Kingston - Techs.html"
-    #"Toyota - Techs" = "Toyota - Techs.html"
-    #"Subaru - Techs" = "Subaru - Techs.html"
-    #"Hyundai - Techs" = "Hyundai - Techs.html"
+	"HondaNY_Accounting" = "HondaNY_Accounting.html"
+
 }
 
 foreach ($rule in $SignatureMap.Keys) {
