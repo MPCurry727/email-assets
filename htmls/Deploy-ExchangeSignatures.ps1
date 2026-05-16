@@ -23,8 +23,8 @@ $SignatureMap = @{
     "Sub K"        = "Subaru-Kingston.html"
     "MBDB"         = "MBDB.html"
     "MBWF"       = "MBWF.html"
-	"TOYHYSUBHA_PlatformManager" = "TOYHYSUBHA_PlatformManager.html"
-	"HondaNY_Accounting" = "HondaNY_Accounting.html"
+	"TOYHYSUBHA" = "TOYHYSUBHA.html"
+	#"HondaNY_Accounting" = "HondaNY_Accounting.html"
 	"Nissan-HondaMA" = "Nissan-HondaMA.html"
 	"MikeDMiele" = "MikeDMiele.html"
 
