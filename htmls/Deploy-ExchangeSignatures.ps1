@@ -29,6 +29,7 @@ $SignatureMap = @{
 	"MikeDMiele" = "MikeDMiele.html"
 	"TOYHYSUBHA - PlatManager" = "TOYHYSUBHA - PlatManager.html"
 	"HondaMA_BodyShop" = "HondaMA_BodyShop.html"
+	"ServiceBDC" = "ServiceBDC.html"
 
 }
 
