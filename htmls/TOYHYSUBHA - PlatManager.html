@@ -5,7 +5,7 @@
       <td style="font-size: 14pt; line-height: 16pt; color:#000e58; font-family: Arial, sans-serif; width: 514px; padding-top: 20px; padding-bottom: 10px; vertical-align: top;" colspan="2">
         <strong>
           <span style="font-size: 14pt; font-family: Arial, sans-serif; color:#0a2a66;">
-            %%FirstName%% %%LastName%%
+            %%DisplayName%%
           </span>
         </strong>
         <div>
@@ -21,7 +21,12 @@
         <div><strong>Curry Hyundai-Subaru-Toyota-Honda</strong></div>
         <div>3040 East Main Street, Cortlandt Manor, NY 10567</div>
         <div>Phone Number: %%PhoneNumber%%</div>
-        <div>Email: %%Email%%</div>
+        <div> 
+          Email:
+          <a href="mailto:%%Email%%" style="color:#2c2c2c; text-decoration:none;">
+            %%Email%%
+          </a>
+        </div>
       </td>
     </tr>
     <!-- Website -->
