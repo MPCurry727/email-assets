@@ -2,7 +2,7 @@
 Install-Module ExchangeOnlineManagement -Scope CurrentUser
 
 Import-Module ExchangeOnlineManagement -ErrorAction Stop
-Connect-ExchangeOnline
+Connect-ExchangeOnline -UserPrincipalName mprescott@curryauto.com
 
 # Base GitHub RAW path (confirmed)
 $repoRawBase = "https://raw.githubusercontent.com/MPCurry727/email-assets/main/htmls"
