@@ -1,5 +1,5 @@
 ﻿# Requires ExchangeOnlineManagement
-Install-Module ExchangeOnlineManagement -Scope CurrentUser
+Install-Module ExchangeOnlineManagement -Scope AllUsers
 
 Import-Module ExchangeOnlineManagement -ErrorAction Stop
 Connect-ExchangeOnline -UserPrincipalName mprescott@curryauto.com
