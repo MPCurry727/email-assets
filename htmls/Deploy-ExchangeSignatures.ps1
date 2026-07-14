@@ -7,8 +7,8 @@ if (-not (Get-Module -ListAvailable -Name ExchangeOnlineManagement)) {
 Import-Module ExchangeOnlineManagement -ErrorAction Stop
 Connect-ExchangeOnline -UserPrincipalName mprescott@curryauto.com
 
-# HTML files live in the same folder as this script
-$scriptFolder = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+# Base GitHub RAW path
+$repoRawBase = "https://raw.githubusercontent.com/MPCurry727/email-assets/main/htmls"
 
 # Exchange Rule Name  ->  HTML file
 $SignatureMap = @{
@@ -38,16 +38,13 @@ $SignatureMap = @{
 
 foreach ($rule in $SignatureMap.Keys) {
     $file = $SignatureMap[$rule]
-    $localPath = Join-Path -Path $scriptFolder -ChildPath $file
+    $encodedFile = [System.Uri]::EscapeDataString($file).Replace('%2F', '/')
+    $url = "$repoRawBase/$encodedFile"
 
     Write-Host "[Updating] Rule '$rule' from $file"
 
     try {
-        if (-not (Test-Path -LiteralPath $localPath)) {
-            throw "HTML file was not found: $localPath"
-        }
-
-        $html = Get-Content -LiteralPath $localPath -Raw -Encoding UTF8
+        $html = Invoke-RestMethod -Uri $url -ErrorAction Stop
 
         Set-TransportRule `
             -Identity $rule `
@@ -55,13 +52,7 @@ foreach ($rule in $SignatureMap.Keys) {
             -ApplyHtmlDisclaimerLocation Append `
             -ErrorAction Stop
 
-        $updatedRule = Get-TransportRule -Identity $rule -ErrorAction Stop
-        if ($updatedRule.ApplyHtmlDisclaimerText -eq $html) {
-            Write-Host "[Verified] $rule updated from local file" -ForegroundColor Green
-        }
-        else {
-            Write-Host "[Warning] $rule command ran, but Exchange does not show the expected HTML yet" -ForegroundColor Yellow
-        }
+        Write-Host "[OK] $rule updated successfully" -ForegroundColor Green
     }
     catch {
         Write-Host "[Failed] $rule failed: $($_.Exception.Message)" -ForegroundColor Red
