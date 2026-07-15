@@ -34,6 +34,7 @@ $SignatureMap = @{
     "HondaMA_BodyShop"         = "HondaMA_BodyShop.html"
     "ServiceBDC"               = "ServiceBDC.html"
     "Nissan - Comply"          = "Nissan - Comply.html"
+	"Jon Schlesiner" 		   = "Jon Schlesiner.html" 			
 }
 
 foreach ($rule in $SignatureMap.Keys) {
